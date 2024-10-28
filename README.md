@@ -82,20 +82,20 @@ The dashboard answers the following questions:
 ```
 ## Dashboard Process
 
-   ### Data Loading and Preparation 
-       The data was uploaded from CSV files provided by Maven Analytics directly into Power BI.
-       Data cleaning and formatting were completed within Power BI, including date formatting and location/category mapping.
+ - Data Loading and Preparation 
+   The data was uploaded from CSV files provided by Maven Analytics directly into Power BI.
+   Data cleaning and formatting were completed within Power BI, including date formatting and location/category mapping.
 
-   ### DAX Measures Creation
-       DAX formulas were created to calculate key metrics, such as total revenue, average unit price, growth rates, and more.
+ - DAX Measures Creation
+   DAX formulas were created to calculate key metrics, such as total revenue, average unit price, growth rates, and more.
 
-   ### Visualization and Layout Design
-       Various Power BI visuals (e.g., line charts, bar charts, slicers) were used to create an interactive, user-friendly interface.
-       Filters and slicers were added to enable deeper analysis by category, location, and date.
+ - Visualization and Layout Design
+   Various Power BI visuals (e.g., line charts, bar charts, slicers) were used to create an interactive, user-friendly interface.
+   Filters and slicers were added to enable deeper analysis by category, location, and date.
 
-   ### Dashboard Testing and Refinement
-       The dashboard was tested for accuracy and usability.
-       Feedback was gathered to ensure the dashboard meets stakeholders' needs.
+-  Dashboard Testing and Refinement
+   The dashboard was tested for accuracy and usability.
+   Feedback was gathered to ensure the dashboard meets stakeholders' needs.
 
 # Insights and Analysis
 
