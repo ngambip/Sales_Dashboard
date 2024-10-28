@@ -101,7 +101,9 @@ The dashboard answers the following questions:
 
 # Dashboard
 
-![dashboard](Assets/Images/Toy sales.png
+![dashboard](Assets/Images/Toy_sales.png)
+
+![dashboard2](Assets/Images/Toy_sales_2.docx.png)
 
 # Insights and Analysis
 
