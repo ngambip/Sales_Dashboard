@@ -60,20 +60,6 @@ The dashboard answers the following questions:
 
 ---
 
-## DAX Calculations
-
-Several DAX measures were calculated to provide insights into the data. Here are a few key DAX calculations and their purposes:
-
-1. **Total Revenue**  
-   - Measure for calculating overall revenue across categories and locations.
-     
-   ```DAX
-   Total Revenue = SUM('Sales'[Revenue])
-
-   Monthly Revenue = CALCULATE([Total Revenue], DATESMTD('Sales'[Date]))
-
-YoY Growth = ( [This Year Sales] - [Last Year Sales] ) / [Last Year Sales]
-markdown
 
 ## DAX Calculations
 
@@ -81,28 +67,29 @@ Several DAX measures were calculated to provide insights into the data. Here are
 
 1. **Total Revenue**  
    - Measure for calculating overall revenue across categories and locations.
-     
-   ```DAX
+
+ ```DAX
    
-1. Total Revenue = SUM('Sales'[Revenue])
+1.  Total Revenue = SUM('Sales'[Revenue])
 
 2. **Quartely Revenue Trend**
 
-   Quarterly Revenue = CALCULATE([Total Revenue], DATESMTD('Sales'[Date]))
+    Quarterly Revenue = CALCULATE([Total Revenue], DATESMTD('Sales'[Date]))
 
-3 **Year-over-Year Growth Rate**
+3. **Year-over-Year Growth Rate**
 
     YoY Growth = ( [This Year Sales] - [Last Year Sales] ) / [Last Year Sales]
 
-4 **Average Revenue per Order**
-  Average Revenue per Order = DIVIDE([Total Revenue], [Order Count])
+4. **Average Revenue per Order**
+
+     Average Revenue per Order = DIVIDE([Total Revenue], [Order Count])
 
 5. **Revenue by Category**
-    Revenue by Category = CALCULATE([Total Revenue], 'Sales'[Category])
+     Revenue by Category = CALCULATE([Total Revenue], 'Sales'[Category])
 
 6. **Average Unit Price**
-   Average Unit Price = DIVIDE([Total Revenue], [Total Units Sold])
-
+     Average Unit Price = DIVIDE([Total Revenue], [Total Units Sold])
+```
 ## Dashboard Process
 
       - Data Loading and Preparation
