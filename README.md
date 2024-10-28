@@ -97,6 +97,12 @@ The dashboard answers the following questions:
    The dashboard was tested for accuracy and usability.
    Feedback was gathered to ensure the dashboard meets stakeholders' needs.
 
+
+
+# Dashboard
+
+![dashboard](Assets/Images/Toy sales.png
+
 # Insights and Analysis
 
 This dashboard provides comprehensive insights into the toy sales data. It reveals location-based trends, identifies the best-selling categories, and tracks sales growth. This helps stakeholders make informed decisions on inventory management, promotional strategies, and resource allocation across different locations.
