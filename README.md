@@ -63,49 +63,39 @@ The dashboard answers the following questions:
 
 ## DAX Calculations
 
-Several DAX measures were calculated to provide insights into the data. Here are a few key DAX calculations and their purposes:
-
-1. **Total Revenue**  
-   - Measure for calculating overall revenue across categories and locations.
+**Several DAX measures were calculated to provide insights into the data. Here are a few key DAX calculations and their purposes:** 
 
  ```DAX
    
 1.  Total Revenue = SUM('Sales'[Revenue])
 
-2. **Quartely Revenue Trend**
+2.  Quarterly Revenue = CALCULATE([Total Revenue], DATESMTD('Sales'[Date]))  
 
-    Quarterly Revenue = CALCULATE([Total Revenue], DATESMTD('Sales'[Date]))
+3.  YoY Growth = ( [This Year Sales] - [Last Year Sales] ) / [Last Year Sales] 
 
-3. **Year-over-Year Growth Rate**
+4.  Average Revenue per Order = DIVIDE([Total Revenue], [Order Count])
 
-    YoY Growth = ( [This Year Sales] - [Last Year Sales] ) / [Last Year Sales]
+5.  Revenue by Category = CALCULATE([Total Revenue], 'Sales'[Category])
 
-4. **Average Revenue per Order**
-
-     Average Revenue per Order = DIVIDE([Total Revenue], [Order Count])
-
-5. **Revenue by Category**
-     Revenue by Category = CALCULATE([Total Revenue], 'Sales'[Category])
-
-6. **Average Unit Price**
-     Average Unit Price = DIVIDE([Total Revenue], [Total Units Sold])
+6. Average Unit Price = DIVIDE([Total Revenue], [Total Units Sold])
+     
 ```
 ## Dashboard Process
 
-      - Data Loading and Preparation
-        The data was uploaded from CSV files provided by Maven Analytics directly into Power BI.
-        Data cleaning and formatting were completed within Power BI, including date formatting and location/category mapping.
+   ### Data Loading and Preparation 
+       The data was uploaded from CSV files provided by Maven Analytics directly into Power BI.
+       Data cleaning and formatting were completed within Power BI, including date formatting and location/category mapping.
 
-      - DAX Measures Creation
-        DAX formulas were created to calculate key metrics, such as total revenue, average unit price, growth rates, and more.
+   ### DAX Measures Creation
+       DAX formulas were created to calculate key metrics, such as total revenue, average unit price, growth rates, and more.
 
-      - Visualization and Layout Design
-        Various Power BI visuals (e.g., line charts, bar charts, slicers) were used to create an interactive, user-friendly interface.
-        Filters and slicers were added to enable deeper analysis by category, location, and date.
+   ### Visualization and Layout Design
+       Various Power BI visuals (e.g., line charts, bar charts, slicers) were used to create an interactive, user-friendly interface.
+       Filters and slicers were added to enable deeper analysis by category, location, and date.
 
-      - Dashboard Testing and Refinement
-        The dashboard was tested for accuracy and usability.
-        Feedback was gathered to ensure the dashboard meets stakeholders' needs.
+   ### Dashboard Testing and Refinement
+       The dashboard was tested for accuracy and usability.
+       Feedback was gathered to ensure the dashboard meets stakeholders' needs.
 
 # Insights and Analysis
 
